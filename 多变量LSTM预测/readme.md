@@ -42,3 +42,16 @@ grid_search  = GridSearchCV(estimator = grid_model,
                             cv = 2)
 
 grid_search.fit(trainX,trainY,validation_data=(testX,testY))
+
+
+
+#可视化
+plt.plot(original, color = 'red', label = 'Real  Stock Price')
+plt.plot(pred, color = 'blue', label = 'Predicted  Stock Price')
+plt.title(' Stock Price Prediction')
+plt.xlabel('Time')
+plt.ylabel(' Stock Price')
+plt.legend()
+plt.show()
+
+
